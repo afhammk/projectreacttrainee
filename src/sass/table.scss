@@ -1,0 +1,107 @@
+// Table component style
+.table-main {
+  & .heading {
+    font-family: "Montserrat-Bold";
+    font-size: 26px;
+  }
+  & .search{
+    position: relative;
+    border-radius: 20px;
+    border:1px solid #AFAFAF;
+    margin-left: 0;
+    width: 100%;
+    & .search-icon{
+      padding:0 16px;
+      height: 100%;
+      position: absolute;
+      pointer-events: none;
+      @include flex(center, center);
+      svg{
+        fill:#AFAFAF;
+      }
+    }
+    .MuiInputBase-root{
+      color: inherit;
+      width: 100%;
+      input{
+      width: 100%;
+      padding: 8px 8px 8px 0px;
+      transition: width 300ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+      padding-left: calc(1em + 32px);
+      }
+    }
+}
+  & .btn-add {
+    background-color: #00CCF2;
+    text-transform: capitalize;
+    color: #fff;
+    border-radius: 20px;
+  }
+  .btn-green{
+    @extend .btn-add;
+    background-color:#6CA855;
+    &:hover{
+      background-color:#6CA855 !important;
+    }
+  }
+  & .btn-add:hover {
+    background-color: #00CCF2;
+  }
+  & .btn-edit {
+    color: #0D5E9A;
+    font-size: 12px;
+    background-color: #F2F2F2;
+    margin-right: 10px;
+    padding: 2px 8px;
+  }
+  & .btn-del {
+    @extend .btn-edit;
+    color: #EF2525;
+    margin-right: 0px;
+  }
+  & .table {
+    & .MuiTableCell-root {
+      padding: 12px 30px;
+      }
+      .last-row td{
+        border-bottom: none;
+      }
+  }
+  .buttons-right {
+    
+    li{
+      position: relative;
+      & +li{
+        margin-left: 20px;
+      }
+      .drop-down{
+        position: absolute;
+        z-index: 9999;
+        min-width: 200px;
+        min-height: 178px;
+        background-color: #FCFCFC;
+        box-shadow:0px 3px 6px rgba(0,0,0,0.16);
+        padding:7px;
+        top: 54px;
+        border-radius: 5px;
+        right: 0;
+        &:after {
+          content: "";
+          position: absolute;
+          width: 0;
+          top: 0;
+          height: 0;
+          margin-left: 3.5em;
+          bottom: 0em;
+          left: 50%;
+          box-sizing: border-box;
+          border: .5em solid #FCFCFC;
+          border-color: #FCFCFC #FCFCFC transparent transparent;
+          transform-origin: 0 0;
+          transform: rotate(-45deg);
+          box-shadow: 3px -3px 3px rgba(0, 0, 0, 0.16)
+        }
+        }
+    }
+  }
+}

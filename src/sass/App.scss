@@ -1,0 +1,42 @@
+@import './variables';
+@font-face {
+    src: url("../components/assets/fonts/Montserrat/Montserrat-Regular.ttf");
+    font-family: "Montserrat";
+}
+@font-face {
+  src: url("../components/assets/fonts/Montserrat/Montserrat-Bold.ttf");
+  font-family: "Montserrat-Bold";
+}
+@font-face {
+  src: url("../components/assets/fonts/Montserrat/Montserrat-SemiBold.ttf");
+  font-family: "Montserrat-SemiBold";
+}
+body{
+  font-size: 14px;
+  font-family: "Montserrat-Bold";
+}
+.font-bold{
+  font-family: "Montserrat-Bold";
+}
+button:focus {
+  outline: none;
+}
+
+// table page
+@import './table.scss';
+// home page
+@import './Home.scss';
+// brands page
+@import './brands.scss';
+// forms page
+@import './Forms.scss';
+// forms section
+@import './Section.scss';
+// item details page
+@import './details.scss';
+// // new brand page
+// @import './editbrand.scss';
+// new unit page
+@import './newunit.scss';
+
+@import './Items.scss'

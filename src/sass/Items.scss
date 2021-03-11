@@ -1,0 +1,33 @@
+// items page
+.items-main {
+    // & .btn-actions{
+    //     text-transform: capitalize;
+    //     // margin-left: 10px;
+    // }
+    & .btn-edit {
+        font-size: 12px;
+        margin-right: 10px;
+        padding: 2px 8px;
+      }
+    & .btn-del {
+        @extend .btn-edit;
+        margin-right: 0px;
+    }
+    & .MuiTableRow-head {
+        padding-left: 30px;
+    }
+    & .MuiTableCell-body{
+        padding: 15px 30px;
+    }
+    & .MuiTableCell-head{
+        padding: 15px 30px;
+    }
+    & .searchfield {
+        & .MuiOutlinedInput-adornedStart{
+            height: 43px;
+            padding-left: 14px;
+            width: 272px;
+            font-size: 14px;
+        }
+    }
+}

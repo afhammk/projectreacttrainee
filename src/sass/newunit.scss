@@ -1,0 +1,28 @@
+
+
+.photo-pic{
+    height: 100px;
+    width: 100px;
+    object-fit: cover;
+    border-radius: 4px;
+}
+.edit-photo{
+  & .MuiIconButton-colorPrimary {
+   
+    position: relative;
+    bottom: 100px;
+    margin-left: 68px;
+}
+}
+
+.dilog-btn{
+    margin-right: -20px;
+    & .MuiButton-contained{
+        margin-top: 20px;
+        margin-right: 15px;
+    }
+& .MuiButton-containedPrimary{
+    margin-top: 20px;
+}
+
+}

@@ -1,0 +1,27 @@
+// brands page
+.brands-main {
+    & .btn-add {
+        position: absolute;
+        top: -6px;
+        right: 0;
+        text-transform: capitalize;
+    }
+    & .btn-edit {
+        font-size: 12px;
+        margin-right: 10px;
+        padding: 2px 8px;
+      }
+    & .btn-del {
+        @extend .btn-edit;
+        margin-right: 0px;
+    }
+    & .MuiTableRow-head {
+        padding-left: 30px;
+    }
+    & .MuiTableCell-body{
+        padding: 10px 30px;
+    }
+    & .MuiTableCell-head{
+        padding: 15px 30px;
+    }
+}

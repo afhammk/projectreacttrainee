@@ -1,0 +1,121 @@
+ .details-input{
+       
+        & .MuiInputLabel-outlined {
+         
+            font-size: 11px ;
+            font-weight: bold ;
+            color: black;
+        }
+        
+        & .MuiInputBase-formControl{
+            background: none;
+            color: black;
+            font-size: 11px ;
+            font-weight: 500;
+            
+        }
+        & .MuiOutlinedInput-input{
+            font-weight: bold;
+            font-size: 13px;
+        }
+    }
+.Dynamic-input{
+    & .MuiInputLabel-outlined {
+         
+        font-size: 11px ;
+        font-weight: bold ;
+        color: black;
+        
+    }
+   
+    & .MuiInputBase-formControl{
+        background: none;
+       
+        font-size: 11px ;
+        font-weight: 500;
+        
+    }
+}
+.photo-btn{
+    display: inline-block;
+    float: left;
+    & .MuiButton-root{
+        padding: 32px 32px;
+        box-shadow: none;
+    }
+}
+.natural{
+    position: relative;
+    display: inline-block;
+    & img{
+        height: 86px;
+        width: 86px;
+        margin-left: 10px;
+        border-radius: 3px;
+        object-fit: cover;
+    }
+    & .MuiIconButton-root{
+        padding: 0px;
+    }
+    & .MuiIconButton-colorPrimary {
+        color: #e0e0e0; 
+        top:4px;
+        right:4px;
+        position: absolute;
+    }
+
+    
+}
+// forms page
+.forms-main {
+    & .btn-add {
+        position: absolute;
+        top: 0;
+        right: 0;
+        text-transform: capitalize;
+        
+    }
+    & .btn-edit {
+        font-size: 12px;
+        margin-right: 10px;
+        padding: 2px 8px;
+      }
+    // & .btn-del {
+    //     @extend .btn-edit;
+    //     margin-right: 0px;
+    // }
+    & .MuiTableRow-head {
+        padding-left: 30px;
+    }
+ 
+}
+
+ .size-ui{
+    & ul {
+        display: inline-flex;
+        border: 1px solid #E8E8E8;
+    }
+    & .S{
+        padding-left: 15px;
+        padding-right: 15px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    & .size{
+        padding-left: 15px;
+        padding-right: 15px;
+        background: #E8E8E8;
+        font-size: 11px;
+        font-weight: bold;
+    }
+}
+.cone-btn{
+    & .MuiButton-containedPrimary{
+        padding: 7px;
+    }
+    & .MuiButton-label{
+        font-size: 9px;
+    }
+}
+
+   

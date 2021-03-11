@@ -1,0 +1,36 @@
+$primary : #151616;
+$secondary : #fff;
+$default:#2F3031;
+@mixin mediaMax ($width) {
+    @media screen and (max-width:$width){
+        @content;
+    }
+}
+@mixin mediaMin ($width) {
+    @media screen and (min-width:$width){
+        @content;
+    }
+}
+@mixin flex($align,$justify){
+    display: flex;
+    align-items: $align;
+    justify-content: $justify
+};
+@mixin custom-scroll-bar() {
+    &::-webkit-scrollbar {
+      border-radius: 10px;
+      height: 10px;
+      width: 8px;
+    }
+  
+    &::-webkit-scrollbar-thumb {
+      background: $default;
+      border-radius: 10px;
+    }
+  
+    &::-webkit-scrollbar-track {
+      border-radius: 10px;
+    }
+  }
+  
+$open-sans-font-path: "../assets/fonts/";
